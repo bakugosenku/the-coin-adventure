@@ -150,13 +150,13 @@ let level1 = [
   '        dd      ',
   '     f  dd  f   ',
   'dddddddddddddddd',
-
-
-
-
-
-
-
+  'dddd       f ddd',
+  'dd       ddddddd',
+  'dd      dddddddd',
+  'ddd    ddddddddd',
+  'ddd   dddddddddd',
+  'iiiiiiiiiiiiiiii',
+  'dddddddddddddddd',
 
 
 
@@ -321,7 +321,12 @@ function setup() {
   fruit.collider = 'static'
   fruit.tile = 'f';
 
-
+//creation blocs
+  ice = new Group();
+  ice.spriteSheet = fruitSheet;
+  ice.addAni({ w: 16, h: 16, col: 0, row: 0, });
+  ice.collider = 'none'
+  ice.tile = 'i';
 
 
 
