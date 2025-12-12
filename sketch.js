@@ -148,7 +148,7 @@ let level1 = [
   '        dd      ',
   'dddddddddddddddd',
   '        dd      ',
-  '      f dd   f  ',
+  '     f  dd  f   ',
   'dddddddddddddddd',
 
 
@@ -411,6 +411,13 @@ function draw() {
     coin.remove();
 
   }
+
+if (player.overlaps(fruit)){
+    fruit.remove();
+
+  }
+
+
 
 
 
