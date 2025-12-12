@@ -25,7 +25,7 @@ let level1 = [
   '                ',
   '        gg      ',
   'ggggggggdddddggg',
-  '        dd      ',
+  '        dds     ',
   '       s dd      ',
   'dddddddddddddddd',
   '        dd      ',
