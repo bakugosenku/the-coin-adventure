@@ -148,7 +148,7 @@ let level1 = [
   '        dd      ',
   'dddddddddddddddd',
   '        dd      ',
-  '        dd      ',
+  '      f dd   f  ',
   'dddddddddddddddd',
 
 
@@ -253,7 +253,7 @@ function preload() {
   worldSheet = loadImage('assets/sprites/world_tileset.png');
   coinSheet = loadImage("assets/sprites/coin.png")
  slimeSheet = loadImage("assets/sprites/slime_purple.png")
-
+ fruitSheet = loadImage("assets/sprites/fruit.png")
 
 }
 
@@ -314,6 +314,12 @@ function setup() {
   slime.collider = 'static'
   slime.tile = 's';
 
+//creation blocs
+  fruit = new Group();
+  fruit.spriteSheet = fruitSheet;
+  fruit.addAni({ w: 16, h: 16, col: 0, row: 0, });
+  fruit.collider = 'static'
+  fruit.tile = 'f';
 
 
 
